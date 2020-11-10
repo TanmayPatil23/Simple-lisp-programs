@@ -1,0 +1,7 @@
+(write-line "Enter list : ")
+(setq l (read-from-string (concatenate 'string "(" (read-line)")")))
+(write-line "Enter the pos :")
+(setq pos (read))
+(setq index (- pos 1))
+(setq res (nth index l))
+(format t "Number at ~d position in the list is = ~d" pos res)
